@@ -24,7 +24,9 @@
     content: ""; position: absolute; right: 30px; bottom: -140px;
     width: 280px; height: 280px; border-radius: 50%; background: rgba(255,255,255,.06);
   }
-  .logo-mark { height: 120px; width: auto; display: block; margin: 0 0 26px -6px; position: relative; }
+  .logo-mark { height: 78px; width: auto; display: block; flex: none; }
+  .name-row { display: flex; align-items: center; gap: 20px; margin-bottom: 34px; position: relative; }
+  .name-row h1 { margin-bottom: 0; }
   .badge {
     display: inline-flex; align-items: center; gap: 10px;
     background: rgba(255,255,255,.18); padding: 12px 24px; border-radius: 999px;
@@ -53,10 +55,12 @@
 <body>
   <div class="frame">
     <div class="clinic">
-      <img class="logo-mark" src="logo-mark.png" alt="미금본닥터정형외과의원 BD 로고">
       <div class="badge">🖐️ 수부외과 세부전문의 진료</div>
       <div class="k">Migeum Bon Doctor Orthopedics</div>
-      <h1>미금본닥터정형외과의원</h1>
+      <div class="name-row">
+        <img class="logo-mark" src="logo-mark.png" alt="미금본닥터정형외과의원 BD 로고">
+        <h1>미금본닥터정형외과의원</h1>
+      </div>
 
       <div class="info">
         <div class="row">
