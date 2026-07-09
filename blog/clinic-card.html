@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body {
+    background: #EEF4F5;
+    font-family: 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif;
+  }
+  .frame {
+    width: 1000px;
+    padding: 60px;
+    display: flex;
+  }
+  .clinic {
+    width: 100%;
+    background: linear-gradient(155deg, #157C81 0%, #1B8A8F 55%, #23A0A0 100%);
+    color: #fff;
+    border-radius: 32px;
+    padding: 60px 64px;
+    box-shadow: 0 30px 70px rgba(21,124,129,.35);
+    position: relative;
+    overflow: hidden;
+  }
+  .clinic::after {
+    content: "";
+    position: absolute;
+    right: -80px; top: -80px;
+    width: 320px; height: 320px;
+    border-radius: 50%;
+    background: rgba(255,255,255,.08);
+  }
+  .clinic::before {
+    content: "";
+    position: absolute;
+    right: 40px; bottom: -120px;
+    width: 260px; height: 260px;
+    border-radius: 50%;
+    background: rgba(255,255,255,.06);
+  }
+  .badge {
+    display: inline-flex; align-items: center; gap: 10px;
+    background: rgba(255,255,255,.18);
+    padding: 12px 22px; border-radius: 999px;
+    font-size: 22px; font-weight: 700; letter-spacing: .02em;
+    margin-bottom: 26px;
+  }
+  .k { font-size: 20px; letter-spacing: .18em; text-transform: uppercase; opacity: .82; font-weight: 700; margin-bottom: 14px; }
+  h1 { font-size: 52px; font-weight: 800; letter-spacing: -.02em; line-height: 1.15; margin-bottom: 34px; position: relative; }
+  .row { display: flex; align-items: center; gap: 16px; font-size: 27px; line-height: 1.4; margin-bottom: 18px; position: relative; }
+  .row .ic { font-size: 28px; width: 34px; flex: none; text-align: center; }
+  .row b { font-weight: 800; }
+  .chips { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 36px; position: relative; }
+  .chips span {
+    font-size: 22px; font-weight: 600;
+    background: rgba(255,255,255,.18);
+    padding: 12px 22px; border-radius: 999px;
+  }
+</style>
+</head>
+<body>
+  <div class="frame">
+    <div class="clinic">
+      <div class="badge">🖐️ 수부세부전문의 진료</div>
+      <div class="k">Migeum Bon Doctor Orthopedics</div>
+      <h1>미금역<br>미금본닥터정형외과</h1>
+      <div class="row"><span class="ic">🩺</span><span>정형외과 전문의 · <b>수부세부전문의</b></span></div>
+      <div class="row"><span class="ic">📍</span><span>미금역 인근 · 손 저림과 손목 통증 정밀 진단</span></div>
+      <div class="chips">
+        <span>손목터널증후군</span><span>방아쇠수지</span><span>손목통증</span>
+        <span>손저림</span><span>수부질환</span><span>관절질환</span>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
