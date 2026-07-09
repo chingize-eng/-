@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { background: #EEF4F5; font-family: 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif; }
+  .frame { width: 1000px; padding: 60px; }
+  .card {
+    background: #fff; border: 1px solid #E3E9EB; border-radius: 32px;
+    padding: 56px 58px; box-shadow: 0 24px 60px rgba(24,40,48,.10);
+    position: relative; overflow: hidden;
+  }
+  .eyebrow {
+    display: inline-flex; align-items: center; gap: 12px;
+    background: #E4F1F1; color: #157C81;
+    font-size: 26px; font-weight: 800; letter-spacing: -.01em;
+    padding: 14px 26px; border-radius: 999px; margin-bottom: 36px;
+  }
+  .brand {
+    position: absolute; top: 60px; right: 58px;
+    font-size: 19px; font-weight: 700; color: #A9BABE; letter-spacing: -.01em;
+  }
+
+  /* checklist */
+  .check { list-style: none; display: grid; gap: 22px; }
+  .check li { display: flex; align-items: flex-start; gap: 20px; font-size: 29px; line-height: 1.4; color: #182830; }
+  .check li .tick {
+    flex: none; width: 42px; height: 42px; border-radius: 50%;
+    background: #157C81; color: #fff; font-size: 22px; font-weight: 800;
+    display: grid; place-items: center; margin-top: 2px;
+  }
+  .check li b { font-weight: 800; color: #157C81; }
+  .note {
+    margin-top: 34px; padding: 26px 30px; background: #F3F8F8; border-radius: 18px;
+    border-left: 6px solid #1B8A8F;
+    font-size: 24px; line-height: 1.55; color: #3C4C52;
+  }
+  .note b { color: #157C81; font-weight: 800; }
+
+  /* steps */
+  .step { display: grid; gap: 16px; }
+  .step + .step { margin-top: 30px; padding-top: 34px; border-top: 2px dashed #E3E9EB; }
+  .step .head { display: flex; align-items: center; gap: 16px; }
+  .step .num {
+    flex: none; width: 54px; height: 54px; border-radius: 15px;
+    background: #157C81; color: #fff; font-size: 28px; font-weight: 800;
+    display: grid; place-items: center;
+  }
+  .step .head .t { font-size: 28px; font-weight: 800; color: #157C81; letter-spacing: -.01em; }
+  .step h3 { font-size: 27px; font-weight: 800; color: #182830; letter-spacing: -.01em; }
+  .step ul { list-style: none; display: grid; gap: 12px; }
+  .step ul li { position: relative; padding-left: 30px; font-size: 25px; line-height: 1.45; color: #2C3C42; }
+  .step ul li::before { content: ""; position: absolute; left: 8px; top: 16px; width: 9px; height: 9px; border-radius: 50%; background: #1B8A8F; }
+  .step p.desc { font-size: 24px; line-height: 1.55; color: #3C4C52; }
+</style>
+</head>
+<body>
+
+<div class="frame" id="checklist">
+  <div class="card">
+    <div class="brand">미금본닥터정형외과</div>
+    <div class="eyebrow">🖐️ 손목터널증후군 자가진단 체크리스트</div>
+    <ul class="check">
+      <li><span class="tick">✓</span><span>엄지·검지·중지가 저리거나 감각이 둔해진다</span></li>
+      <li><span class="tick">✓</span><span>특히 <b>밤·새벽에 손 저림이 심해져</b> 잠에서 깬다</span></li>
+      <li><span class="tick">✓</span><span>손을 털면 일시적으로 증상이 나아진다</span></li>
+      <li><span class="tick">✓</span><span>물건을 자주 떨어뜨리거나 손에 힘이 잘 안 들어간다</span></li>
+      <li><span class="tick">✓</span><span>병뚜껑 열기, 단추 채우기 등 섬세한 동작이 어렵다</span></li>
+      <li><span class="tick">✓</span><span>엄지 아래 두툼한 근육(무지구)이 빠져 보인다</span></li>
+    </ul>
+    <div class="note">💡 <b>새끼손가락은 보통 저리지 않다</b>는 점이 손목터널증후군의 특징적인 감별점입니다.</div>
+  </div>
+</div>
+
+<div class="frame" id="steps">
+  <div class="card">
+    <div class="brand">미금본닥터정형외과</div>
+    <div class="eyebrow">🩺 손목터널증후군 치료 단계</div>
+    <div class="step">
+      <div class="head"><span class="num">1</span><span class="t">초기 — 비수술적 치료</span></div>
+      <h3>대부분 수술 없이 호전됩니다</h3>
+      <ul>
+        <li>손목 사용 줄이기 · 자세 교정</li>
+        <li>야간 손목 보조기(부목) 착용</li>
+        <li>소염제 등 약물 치료 · 물리치료 · 도수치료</li>
+        <li>필요 시 수근관 내 주사 치료</li>
+      </ul>
+    </div>
+    <div class="step">
+      <div class="head"><span class="num">2</span><span class="t">중기 이후 — 필요 시 수술적 치료</span></div>
+      <h3>눌린 신경의 압력을 풀어주는 수근관 감압술</h3>
+      <p class="desc">비수술 치료에도 호전이 없거나 근육 위축·신경 손상이 심할 때 시행하며, 최근에는 최소 절개로 회복이 빠른 방법이 발전해 있습니다. 신경 손상이 진행되기 전 조기 진료가 가장 좋은 치료입니다.</p>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
