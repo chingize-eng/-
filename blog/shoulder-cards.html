@@ -49,6 +49,25 @@
   .step ul li { position: relative; padding-left: 30px; font-size: 25px; line-height: 1.45; color: #2C3C42; }
   .step ul li::before { content: ""; position: absolute; left: 8px; top: 16px; width: 9px; height: 9px; border-radius: 50%; background: #1B8A8F; }
   .step p.desc { font-size: 24px; line-height: 1.55; color: #3C4C52; }
+
+  /* risk-group card */
+  .risk { list-style: none; display: grid; gap: 20px; }
+  .risk li { display: flex; align-items: flex-start; gap: 18px; font-size: 28px; line-height: 1.4; color: #182830; }
+  .risk li .ic { flex: none; width: 46px; height: 46px; border-radius: 13px; background: #E4F1F1; display: grid; place-items: center; font-size: 26px; }
+  .risk li b { font-weight: 800; color: #157C81; }
+
+  /* comparison table card */
+  .cmp { width: 100%; border-collapse: separate; border-spacing: 0; }
+  .cmp th, .cmp td { text-align: left; padding: 20px 22px; vertical-align: top; }
+  .cmp thead th { font-size: 24px; font-weight: 800; }
+  .cmp thead th.c0 { color: #7C8B90; font-size: 20px; }
+  .cmp thead th.c1 { color: #fff; background: #157C81; border-radius: 14px 14px 0 0; }
+  .cmp thead th.c2 { color: #4A5A60; }
+  .cmp tbody td { font-size: 23px; line-height: 1.45; border-top: 1px solid #EAF0F1; }
+  .cmp tbody td.c0 { font-weight: 800; color: #2C3C42; font-size: 21px; width: 26%; }
+  .cmp tbody td.c1 { background: #F0F8F8; color: #17636A; font-weight: 700; width: 40%; }
+  .cmp tbody tr:last-child td.c1 { border-radius: 0 0 14px 14px; }
+  .cmp tbody td.c2 { color: #4A5A60; }
 </style>
 </head>
 <body>
@@ -88,6 +107,40 @@
       <h3>들러붙은 관절낭을 풀어줍니다</h3>
       <p class="desc">주사·운동치료에도 호전이 없고 어깨가 심하게 굳은 경우, 관절경으로 유착된 관절낭을 풀어주는 관절낭 유리술이나 마취하 도수조작을 고려합니다. 이후 재활운동을 병행하면 회복이 빨라집니다.</p>
     </div>
+  </div>
+</div>
+
+<div class="frame" id="risk">
+  <div class="card">
+    <div class="brand">미금본닥터정형외과의원</div>
+    <div class="eyebrow">⚠️ 이런 분들은 특히 주의하세요</div>
+    <ul class="risk">
+      <li><span class="ic">👤</span><span>40~60대 중년층 (특히 여성)</span></li>
+      <li><span class="ic">🩸</span><span><b>당뇨병</b>이 있는 분 — 일반인보다 2~4배 잘 생기고 잘 낫지 않습니다</span></li>
+      <li><span class="ic">🦋</span><span>갑상선 질환이 있는 분</span></li>
+      <li><span class="ic">🩹</span><span>어깨를 다치거나 수술한 뒤 오래 못 움직인 분</span></li>
+      <li><span class="ic">🔁</span><span>한쪽에 오십견을 앓았던 분 (반대쪽에도 올 수 있음)</span></li>
+    </ul>
+    <div class="note">💡 특히 <b>당뇨가 있는 분</b>은 오십견이 더 심하고 오래가므로, 혈당 관리와 함께 조기 치료가 중요합니다.</div>
+  </div>
+</div>
+
+<div class="frame" id="compare">
+  <div class="card">
+    <div class="brand">미금본닥터정형외과의원</div>
+    <div class="eyebrow">🔍 오십견 vs 회전근개 파열, 뭐가 다를까?</div>
+    <table class="cmp">
+      <thead>
+        <tr><th class="c0">구분</th><th class="c1">오십견</th><th class="c2">회전근개 파열</th></tr>
+      </thead>
+      <tbody>
+        <tr><td class="c0">원인</td><td class="c1">관절낭이 굳고 들러붙음</td><td class="c2">힘줄(회전근개)이 찢어짐</td></tr>
+        <tr><td class="c0">남이 팔을 올려줄 때</td><td class="c1">특정 각도 이상 안 올라감</td><td class="c2">대체로 올라감</td></tr>
+        <tr><td class="c0">스스로 팔 들기</td><td class="c1">굳어서 안 올라감</td><td class="c2">힘이 빠져 약함</td></tr>
+        <tr><td class="c0">야간 통증</td><td class="c1">흔함</td><td class="c2">흔함</td></tr>
+      </tbody>
+    </table>
+    <div class="note">💡 증상이 비슷해도 치료가 전혀 다르므로, 정확한 감별을 위해 <b>정형외과 진료</b>가 꼭 필요합니다.</div>
   </div>
 </div>
 
