@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { background: #EEF4F5; font-family: 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif; }
+  .frame { width: 1000px; padding: 60px; }
+  .card {
+    background: #fff; border: 1px solid #E3E9EB; border-radius: 32px;
+    padding: 56px 58px; box-shadow: 0 24px 60px rgba(24,40,48,.10);
+    position: relative; overflow: hidden;
+  }
+  .eyebrow {
+    display: inline-flex; align-items: center; gap: 12px;
+    background: #E4F1F1; color: #157C81;
+    font-size: 26px; font-weight: 800; letter-spacing: -.01em;
+    padding: 14px 26px; border-radius: 999px; margin-bottom: 36px;
+  }
+  .brand {
+    position: absolute; top: 60px; right: 58px;
+    font-size: 19px; font-weight: 700; color: #A9BABE; letter-spacing: -.01em;
+  }
+  .check { list-style: none; display: grid; gap: 22px; }
+  .check li { display: flex; align-items: flex-start; gap: 20px; font-size: 29px; line-height: 1.4; color: #182830; }
+  .check li .tick {
+    flex: none; width: 42px; height: 42px; border-radius: 50%;
+    background: #157C81; color: #fff; font-size: 22px; font-weight: 800;
+    display: grid; place-items: center; margin-top: 2px;
+  }
+  .check li b { font-weight: 800; color: #157C81; }
+  .note {
+    margin-top: 34px; padding: 26px 30px; background: #F3F8F8; border-radius: 18px;
+    border-left: 6px solid #1B8A8F;
+    font-size: 24px; line-height: 1.55; color: #3C4C52;
+  }
+  .note b { color: #157C81; font-weight: 800; }
+  .step { display: grid; gap: 16px; }
+  .step + .step { margin-top: 30px; padding-top: 34px; border-top: 2px dashed #E3E9EB; }
+  .step .head { display: flex; align-items: center; gap: 16px; }
+  .step .num {
+    flex: none; width: 54px; height: 54px; border-radius: 15px;
+    background: #157C81; color: #fff; font-size: 28px; font-weight: 800;
+    display: grid; place-items: center;
+  }
+  .step .head .t { font-size: 28px; font-weight: 800; color: #157C81; letter-spacing: -.01em; }
+  .step h3 { font-size: 27px; font-weight: 800; color: #182830; letter-spacing: -.01em; }
+  .step ul { list-style: none; display: grid; gap: 12px; }
+  .step ul li { position: relative; padding-left: 30px; font-size: 25px; line-height: 1.45; color: #2C3C42; }
+  .step ul li::before { content: ""; position: absolute; left: 8px; top: 16px; width: 9px; height: 9px; border-radius: 50%; background: #1B8A8F; }
+  .step p.desc { font-size: 24px; line-height: 1.55; color: #3C4C52; }
+</style>
+</head>
+<body>
+
+<div class="frame" id="checklist">
+  <div class="card">
+    <div class="brand">미금본닥터정형외과의원</div>
+    <div class="eyebrow">💪 오십견 자가진단 체크리스트</div>
+    <ul class="check">
+      <li><span class="tick">✓</span><span>어깨가 아파서 <b>밤에 자다가 깬다</b> (야간통)</span></li>
+      <li><span class="tick">✓</span><span>팔을 위로 들거나 옆으로 벌리기가 어렵다</span></li>
+      <li><span class="tick">✓</span><span>등 뒤로 손이 안 올라간다 (뒷주머니·브래지어 후크)</span></li>
+      <li><span class="tick">✓</span><span>머리 감기, 세수, 옷 입고 벗기가 힘들다</span></li>
+      <li><span class="tick">✓</span><span>아픈 쪽으로 돌아누우면 통증이 심하다</span></li>
+      <li><span class="tick">✓</span><span>남이 팔을 올려줘도 <b>특정 각도 이상 안 올라간다</b></span></li>
+    </ul>
+    <div class="note">💡 <b>남이 올려줘도 안 올라가는 점(수동 운동범위 제한)</b>이 회전근개 파열과 구별되는 오십견의 특징입니다.</div>
+  </div>
+</div>
+
+<div class="frame" id="steps">
+  <div class="card">
+    <div class="brand">미금본닥터정형외과의원</div>
+    <div class="eyebrow">🩺 오십견 치료 단계</div>
+    <div class="step">
+      <div class="head"><span class="num">1</span><span class="t">통증기 — 비수술적 치료</span></div>
+      <h3>통증을 잡고 어깨가 굳지 않게 지킵니다</h3>
+      <ul>
+        <li>소염제 등 약물 치료 · 물리치료</li>
+        <li>관절강내 주사로 염증·통증 조절</li>
+        <li><b>스트레칭·운동치료가 가장 중요</b> (매일 꾸준히)</li>
+        <li>필요 시 수압팽창술로 굳은 관절낭 확장</li>
+      </ul>
+    </div>
+    <div class="step">
+      <div class="head"><span class="num">2</span><span class="t">심하게 굳었을 때 — 적극적 치료</span></div>
+      <h3>들러붙은 관절낭을 풀어줍니다</h3>
+      <p class="desc">주사·운동치료에도 호전이 없고 어깨가 심하게 굳은 경우, 관절경으로 유착된 관절낭을 풀어주는 관절낭 유리술이나 마취하 도수조작을 고려합니다. 이후 재활운동을 병행하면 회복이 빨라집니다.</p>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
